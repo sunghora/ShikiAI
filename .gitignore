@@ -39,5 +39,15 @@ __pycache__/
 *.png
 *.txt
 
-# === 除外ルールの例外：.gitkeepは追跡対象にする ===
-!**/.gitkeep
+# === 画像・アノテーション除外 ===
+*.jpg
+*.jpeg
+*.png
+*.txt
+*.zip
+
+# === .gitkeep は常に含める（明示的に例外指定）===
+!.gitkeep
+!*/.gitkeep
+!*/*/.gitkeep
+!*/**/.gitkeep
