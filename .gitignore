@@ -1,0 +1,43 @@
+# ========================
+# ShikiAIプロジェクト用 .gitignore
+# ========================
+
+# === アノテーション・画像データ（機密 or 学習素材）除外 ===
+annotations/
+images/
+labels/
+results/
+runs/
+samples-confidential/
+workspace/
+画像資材/
+
+# === preprocess系の出力フォルダ（中間データ）除外 ===
+preprocess/label_editor/
+preprocess/label_editor_missing_txt/
+preprocess/label_editor_output/
+preprocess/merge_editor/
+preprocess/merge_editor_output/
+preprocess/split_80_20_to_train_val/
+
+# === backupやoldなどの非アクティブ資産除外 ===
+backup/
+old/
+
+# === YOLOモデル以外の中間・描画・変換済み結果のjpg/txtも除外 ===
+*.jpg
+*.png
+*.jpeg
+*.txt
+*.zip
+
+# === Python仮想環境関連の除外 ===
+ShikiAI_env/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env/
+
+# === その他 ===
+labelImg/

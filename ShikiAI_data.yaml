@@ -1,0 +1,7 @@
+#ShikiAI_data.yaml  トレーニング用
+
+train: images/train  # 学習用画像フォルダのパス
+val: images/val      # 検証用画像フォルダのパス
+
+nc: 2                # クラス数（ナンバープレートが1種類なら1）
+names: ['clear_plate', 'partial_plate'] # クラス名（リスト形式）

@@ -1,0 +1,9 @@
+# ShikiAI_submit_data.yaml - 提出画像専用ファインチューニング用設定
+
+# すべての提出画像（136枚）を train に入れて学習対象とする
+train: images/train
+val: images/train  # 評価は不要なので val も train と同じに設定
+
+nc: 2  # クラス数（clear_plate, partial_plate）
+
+names: ['clear_plate', 'partial_plate']
